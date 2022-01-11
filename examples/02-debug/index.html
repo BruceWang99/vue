@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>debug</title>
+    <!-- Delete ".min" for console warnings in development -->
+    <script src="../../dist/vue.js"></script>
+    </head>
+  <body>
+	<div id="demo">
+		<h1>{{msg}}</h1>
+	</div>
+    <script>
+		var demo = new Vue({
+			el: '#demo',
+			data: {
+				msg: 'hello  vue source code',
+			}
+		})
+	</script>
+
+  </body>
+</html>

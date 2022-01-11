@@ -30,7 +30,7 @@ Vue.config.isUnknownElement = isUnknownElement
 extend(Vue.options.directives, platformDirectives)
 extend(Vue.options.components, platformComponents)
 
-// install platform patch function
+// install platform patch function 虚拟dom转成真实dom
 Vue.prototype.__patch__ = inBrowser ? patch : noop
 
 // public mount method

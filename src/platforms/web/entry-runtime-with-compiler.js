@@ -31,6 +31,7 @@ Vue.prototype.$mount = function (
 
   const options = this.$options
   // resolve template/el and convert to render function
+  // 没有render就去编译模版
   if (!options.render) {
     let template = options.template
     if (template) {
